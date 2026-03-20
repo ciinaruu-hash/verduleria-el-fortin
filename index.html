@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verdulería El Fortín 3013</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f8f4;
+  padding: 30px;
+}
+
+h1 {
+  color: #2e7d32;
+}
+
+p {
+  color: #555;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 80%;
+  max-width: 300px;
+}
+
+.whatsapp {
+  background-color: #25D366;
+  color: white;
+}
+
+.mercadopago {
+  background-color: #009EE3;
+  color: white;
+}
+
+.alias-box {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.info {
+  margin-top: 20px;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🥬 Verdulería El Fortín 3013</h1>
+<p>Pedidos Take Away</p>
+
+<button class="whatsapp"
+onclick="window.location.href='https://wa.me/5491165777105?text=Hola%20quiero%20hacer%20un%20pedido%20Take%20Away%20en%20Verduleria%20El%20Fortin'">
+📲 Pedir por WhatsApp
+</button>
+
+<button class="mercadopago" onclick="copiarAlias()">
+💳 Copiar Alias Mercado Pago
+</button>
+
+<div class="alias-box">
+Alias: FORTIN3013
+</div>
+
+<div class="info">
+<p>✔ Enviá el comprobante por WhatsApp</p>
+<p>✔ Retirá tu pedido en el local</p>
+</div>
+
+<script>
+function copiarAlias() {
+  navigator.clipboard.writeText("FORTIN3013");
+  alert("Alias copiado ✔ Ahora pegalo en Mercado Pago");
+}
+</script>
+
+</body>
+</html>
